@@ -411,6 +411,14 @@ footer {
     font-size: 1rem;
     padding: 0.8em 1.5em;
   }
+  /* Adjust hero section height and padding for mobile. Using min-height instead of fixed height ensures
+     the background image scales properly and leaves space for the navigation bar. */
+  .hero {
+    min-height: 80vh;
+    height: auto;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
   .about-content {
     flex-direction: column;
     text-align: center;
