@@ -12,11 +12,22 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
   </head>
+
   <body>
     <!-- Navigation -->
     <nav class="navbar">
       <div class="container">
-        <a href="#" class="logo">WebberWellness</a>
+        <!-- Branding: logo image placed next to the text. Replace logo.png with your own file. -->
+        <a href="#" class="logo">
+          <img src="images/favicon-chrome-512x512.png" alt="WebberWellness Logo" class="logo-image" />
+          <span class="logo-text">WebberWellness</span>
+        </a>
+        <!-- Toggle button for mobile navigation -->
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="nav-links">
           <li><a href="#features">Features</a></li>
           <li><a href="#about">About</a></li>
@@ -121,6 +132,13 @@
     <!-- Script to insert current year -->
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Mobile navigation toggle logic
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
     </script>
   </body>
 </html>
