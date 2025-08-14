@@ -121,12 +121,16 @@ p {
   gap: 1.5rem;
 }
 .navbar .nav-links li {
-  display: inline-block;
+  /* Use flex so that anchors are vertically centred relative to the navbar */
+  display: flex;
+  align-items: center;
 }
 .navbar .nav-links a {
   font-weight: 600;
   color: #fff;
   transition: color 0.3s ease;
+  /* Add vertical padding so nav items align better with the logo and button */
+  padding: 0.5rem 0;
 }
 .navbar .nav-links a:hover {
   color: var(--primary);
