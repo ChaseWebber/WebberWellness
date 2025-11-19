@@ -222,7 +222,7 @@ p {
 .features-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .feature-item {
   background: var(--light);
@@ -428,6 +428,9 @@ footer {
     padding-top: 6rem;
     padding-bottom: 3rem;
     background-attachment: scroll;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
   }
   .about-content {
     flex-direction: column;
