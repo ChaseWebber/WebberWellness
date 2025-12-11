@@ -1,144 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon-chrome-512x512.png" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebberWellness</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-TrSxntRGMaRbTxjslRj2u06zgS4RCx6gCoOB/0Gkv4dN+igbXrlxtHaCgn20N/Z0t+m1RJq+v81UFgmA9Hn9Ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-  </head>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="container">
-        <!-- Branding: logo image placed next to the text. Replace logo.png with your own file. -->
-        <a href="#" class="logo">
-          <img src="images/favicon-chrome-512x512.png" alt="WebberWellness Logo" class="logo-image" />
-          <span class="logo-text">WebberWellness</span>
-        </a>
-        <!-- Toggle button for mobile navigation -->
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#download" class="btn btn-primary">Download App</a></li>
-        </ul>
-      </div>
-    </nav>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="overlay"></div>
-      <div class="container hero-content">
-        <h1>A New Way to Achieve Real&nbsp;Wellbeing</h1>
-        <p>Get‑Real Wellness uses expert‑curated advice combined with an AI Assistant to provide you with specific, actionable solutions. Finally, a wellness solution that works for your busy life.</p>
-        <a href="https://apps.apple.com/" class="btn btn-primary btn-large" id="download">Start your FREE 7 Day Trial</a>
-      </div>
-    </section>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-      <div class="container">
-        <h2>Why Choose Get‑Real Wellness?</h2>
-        <div class="features-grid">
-          <!-- Discover Wellness Guidelines -->
-          <div class="feature-item">
-            <i class="fa-solid fa-book-open"></i>
-            <h3>Discover Wellness Guidelines</h3>
-            <p>Curated by Dr. Chase Webber, our guidelines cover nutrition, fitness, yoga, breathing, hydrotherapy and mindfulness. We scan the latest research and deliver the gems to you.</p>
-          </div>
-          <!-- AI Assistant -->
-          <div class="feature-item">
-            <i class="fa-solid fa-robot"></i>
-            <h3>Meet Ana – AI Assistant<span class="premium"> (Premium)</span></h3>
-            <p>Ask Ana any wellness, nutrition, exercise or mindfulness question and receive evidence‑based, practical answers. Your chats remain private and stored only on your device.</p>
-          </div>
-          <!-- Wellness Goals -->
-          <div class="feature-item">
-            <i class="fa-solid fa-bullseye"></i>
-            <h3>Create &amp; Track Goals<span class="premium"> (Premium)</span></h3>
-            <p>Choose from preset goals or set your own to take charge of your unique health journey. Integrates seamlessly with Apple Health to manage sleep, activity and mindfulness data.</p>
-          </div>
-          <!-- Evidence Based -->
-          <div class="feature-item">
-            <i class="fa-solid fa-flask"></i>
-            <h3>Scientific &amp; Evidence Based</h3>
-            <p>Learn from our in‑app blog and video podcasts. Insights from Dr. Chase Webber’s book “The Wellness Formula” and the latest studies keep you informed and empowered.</p>
-          </div>
-          <!-- Premium Subscription -->
-          <div class="feature-item">
-            <i class="fa-solid fa-star"></i>
-            <h3>Premium Subscription</h3>
-            <p>Enjoy a 7‑day free trial when you subscribe and explore all premium features. Experience the difference before committing.</p>
-          </div>
-          <!-- Privacy -->
-          <div class="feature-item">
-            <i class="fa-solid fa-star"></i>
-            <h3>Privacy &amp; Security</h3>
-            <p>All data & chats are stored exclusively on device.</p>
-          </div>
+<body>
+
+<!-- NAVIGATION -->
+<header class="nav">
+    <div class="container nav-inner">
+        <div class="logo">Webber Wellness</div>
+        <nav class="nav-links">
+            <a href="#courses">Courses</a>
+            <a href="#app">App</a>
+            <a href="#retreats">Retreats</a>
+            <a href="#consulting">Consulting</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+        </nav>
+        <a class="nav-cta" href="#app">Download App</a>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container hero-inner">
+        <h1>Build Real Wellbeing Through Science, Natural Medicine & Smart Technology</h1>
+        <p>Practical tools, accessible training, and personalised guidance to help you — or your clients — create sustainable wellbeing for life.</p>
+        <div class="hero-buttons">
+            <a href="#courses" class="btn primary">Explore Wellness Courses</a>
+            <a href="#app" class="btn secondary">Download the App</a>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-      <div class="container about-content">
+<!-- PHILOSOPHY SECTION -->
+<section class="philosophy">
+    <div class="container">
+        <h2>A Balanced, Evidence-Based Approach to Wellbeing</h2>
+        <p class="section-intro">The Wellness Formula blends science, natural medicine, and modern technology into a practical system anyone can follow.</p>
+
+        <div class="philosophy-grid">
+            <div class="philo-item">
+                <h3>Science-Backed</h3>
+                <p>Latest research simplified into practical daily habits.</p>
+            </div>
+            <div class="philo-item">
+                <h3>Nature-Inspired</h3>
+                <p>Rooted in naturopathic principles that support the body’s healing abilities.</p>
+            </div>
+            <div class="philo-item">
+                <h3>Tech-Enhanced</h3>
+                <p>AI tools and health data help personalise your wellbeing journey.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COURSES SECTION -->
+<section id="courses" class="courses">
+    <div class="container">
+        <h2>Learn to Guide, Teach & Transform Wellbeing</h2>
+        <p class="section-intro">Accessible, practical, evidence-based training for professionals and wellness enthusiasts.</p>
+
+        <div class="course-card large">
+            <h3>Wellness Coach Certification</h3>
+            <p>A complete, step-by-step training program for aspiring coaches and wellness professionals.</p>
+            <a class="btn primary" href="#">Become a Wellness Coach</a>
+        </div>
+
+        <div class="course-card medium">
+            <h3>Wellness Spa Management Course</h3>
+            <p>Practical training for spa owners, managers, and hospitality leaders.</p>
+            <a class="btn secondary" href="#">Start the Course</a>
+        </div>
+
+        <div class="microcourses">
+            <h4>Micro-Courses (Coming Soon)</h4>
+            <ul>
+                <li>Breathing & Nervous System Reset</li>
+                <li>Sleep Optimization</li>
+                <li>Nutrition Fundamentals</li>
+                <li>Stress Adaptation</li>
+                <li>Hydrotherapy at Home</li>
+            </ul>
+            <a class="btn outline" href="#">Join the Waitlist</a>
+        </div>
+    </div>
+</section>
+
+<!-- APP SECTION -->
+<section id="app" class="app">
+    <div class="container app-inner">
+        <div class="app-text">
+            <h2>Your Personal Naturopathic Assistant — Powered by AI</h2>
+            <p>Evidence-based daily guidance, personalised to your body and your lifestyle.</p>
+            <ul>
+                <li>Personalised wellness guidelines</li>
+                <li>AI answers grounded in natural medicine</li>
+                <li>Track sleep, activity & habits</li>
+                <li>Evidence-based habit protocols</li>
+                <li>Private on-device chat with Ana</li>
+            </ul>
+            <a class="btn primary" href="#">Download on the App Store</a>
+        </div>
+        <div class="app-visual">
+            <div class="placeholder">App Preview<br>(Insert Mockup)</div>
+        </div>
+    </div>
+</section>
+
+<!-- RETREATS SECTION -->
+<section id="retreats" class="retreats">
+    <div class="container">
+        <h2>Reset Your Body. Rebuild Your Energy. Realign Your Life.</h2>
+        <p>Immersive small-group retreats inspired by The Wellness Formula.</p>
+
+        <div class="retreat-highlights">
+            <p>• Evidence-based education</p>
+            <p>• Transformational daily routines</p>
+            <p>• Guided integration</p>
+        </div>
+
+        <a class="btn secondary" href="#">Explore Retreat Dates</a>
+    </div>
+</section>
+
+<!-- CONSULTING & PARTNERSHIPS -->
+<section id="consulting" class="consulting">
+    <div class="container consulting-grid">
+
+        <div class="consult-card">
+            <h3>Hetki Sauna Partnership</h3>
+            <p>Bring evidence-based heat therapy into your home.</p>
+            <a class="btn outline" href="#">Learn More</a>
+        </div>
+
+        <div class="consult-card">
+            <h3>Spa & Hospitality Consulting</h3>
+            <p>Selective high-impact collaborations for aligned wellness projects.</p>
+            <a class="btn outline" href="#">Request a Consultation</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+    <div class="container about-inner">
         <div class="about-text">
-          <h2>Meet Dr. Chase Webber</h2>
-          <p>With more than 30 years of experience in wellness and natural medicine, Dr. Chase Webber has helped thousands of patients across multiple continents. Get‑Real Wellness AI Health is his legacy project to bring real solutions for better health and a balanced life.</p>
-          <p>Author of <em>The Wellness Formula – How to Optimize Your Natural Healing Ability</em>, Dr. Webber curates the latest research in nutrition, exercise, yoga, breathing, hydrotherapy and mindfulness. Through the in‑app blog and video podcasts, he shares evidence‑based insights to help you build and optimize your health.</p>
+            <h2>About Dr. Chase Webber</h2>
+            <p>A naturopathic doctor with 35 years of experience integrating natural medicine, modern science, and AI tools to help individuals and professionals build sustainable wellbeing systems.</p>
+            <a class="btn secondary" href="#">Read My Story</a>
         </div>
-        <div class="about-image">
-          <!-- Replace the file below with a real photo of Dr Webber (e.g. save as images/dr-webber.jpg) -->
-          <img src="images/drwebber.jpeg" alt="Dr Chase Webber" />
+        <div class="about-visual">
+            <div class="placeholder">Your Photo<br>(Insert Image)</div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Call to Action Section -->
-    <section class="cta">
-      <div class="container cta-content">
-        <h2>Ready to Start Your Journey?</h2>
-        <p>Say hello to Ana, your personal Advanced Naturopathic Assistant. Powered by Dr. Chase Webber’s expert guidance, Ana gives you clear, actionable answers for all your wellness needs - anytime you want. Unlock the power of Get‑Real Wellness AI Health.</p>
-        <a href="https://apps.apple.com/" class="btn btn-secondary btn-large">Start your FREE 7 Day Trial</a>
-      </div>
-    </section>
+<!-- CONTENT HUB -->
+<section id="blog" class="content-hub">
+    <div class="container">
+        <h2>Learn the Science of Real Wellbeing</h2>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container footer-content">
-        <p>&copy; <span id="year"></span> WebberWellness. All Rights Reserved.</p>
-        <div class="social-links">
-          <a href="https://instagram.com/" aria-label="Instagram"><img src="images/icons/instagram.svg" alt="Instagram" /></a>
-          <a href="https://x.com/" aria-label="X"><img src="images/icons/x.svg" alt="X" /></a>
-          <a href="https://youtube.com/" aria-label="YouTube"><img src="images/icons/youtube.svg" alt="YouTube" /></a>
-          <a href="https://substack.com/" aria-label="Substack"><img src="images/icons/substack.svg" alt="Substack" /></a>
-          <a href="https://apps.apple.com/" aria-label="App Store"><img src="images/icons/appstore.svg" alt="App Store" /></a>
+        <div class="content-grid">
+            <a href="#" class="content-card">Blog Articles</a>
+            <a href="#" class="content-card">Substack</a>
+            <a href="#" class="content-card">Video Podcast</a>
         </div>
-      </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- Script to insert current year -->
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
+<!-- FOOTER CTA -->
+<section class="footer-cta">
+    <h2>Start Your Wellness Journey Today</h2>
+    <a class="btn primary" href="#courses">Explore Courses</a>
+    <a class="btn secondary" href="#app">Download the App</a>
+</section>
 
-      // Mobile navigation toggle logic
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-    });
-    </script>
-  </body>
+<footer class="footer">
+    <p>© 2025 Webber Wellness. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
