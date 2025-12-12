@@ -214,16 +214,6 @@ h1, h2, h3, h4 {
     object-fit: contain;
 }
 
-.placeholder {
-    width: 100%;
-    height: 300px;
-    background: #ccc;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* RETREATS */
 .retreats {
     padding: 100px 0;
@@ -250,17 +240,47 @@ h1, h2, h3, h4 {
     padding: 100px 0;
 }
 
-.about-inner {
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.about-card {
+    background: #f5f8fa;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+}
+
+.about-card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .about-photo {
     width: 100%;
-    height: 300px;
+    height: 280px;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    border-radius: 0;
+}
+
+.placeholder {
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(135deg, #dbeeff, #f0f4f8);
+    color: #0e264b;
+    border-radius: 0;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* CONTENT HUB */
@@ -343,9 +363,12 @@ h1, h2, h3, h4 {
     .philosophy-grid,
     .app-inner,
     .consulting-grid,
-    .about-inner,
     .content-grid {
         flex-direction: column;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
     }
 
 }
