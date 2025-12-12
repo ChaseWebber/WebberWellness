@@ -133,8 +133,17 @@ h1, h2, h3, h4 {
 /* HERO */
 .hero {
     padding: 120px 0;
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url('images/website-banner.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    background: #def6f8;
+    color: #fff;
 }
 
 .hero h1 {
