@@ -18,16 +18,26 @@
 <!-- NAVIGATION -->
 <header class="nav">
     <div class="container nav-inner">
-        <div class="logo">WebberWellness</div>
-        <nav class="nav-links">
-            <a href="#courses">Courses</a>
-            <a href="#app">App</a>
-            <a href="#retreats">Retreats</a>
-            <a href="#consulting">Consulting</a>
-            <a href="#about">About</a>
-            <a href="#blog">Blog</a>
-        </nav>
-        <a class="nav-cta" href="#app">Download App</a>
+        <div class="logo">
+            <img src="images/favicon-chrome-512x512.png" alt="WebberWellness logo">
+            <span>WebberWellness</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu">
+            <nav class="nav-links">
+                <a href="#courses">Courses</a>
+                <a href="#app">App</a>
+                <a href="#retreats">Retreats</a>
+                <a href="#consulting">Consulting</a>
+                <a href="#about">About</a>
+                <a href="#blog">Blog</a>
+            </nav>
+            <a class="nav-cta" href="#app">Download App</a>
+        </div>
     </div>
 </header>
 
@@ -198,6 +208,16 @@
 <footer class="footer">
     <p>© 2025 WebberWellness. All rights reserved.</p>
 </footer>
+
+<script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    navToggle.addEventListener('click', () => {
+        const isOpen = navMenu.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', isOpen);
+    });
+</script>
 
 </body>
 </html>
