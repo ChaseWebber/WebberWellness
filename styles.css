@@ -159,12 +159,11 @@ h1, h2, h3, h4 {
     position: relative;
     z-index: 1;
     max-width: 780px;
-    background: rgba(255, 255, 255, 0.82);
-    color: #0e264b;
-    border: 1px solid rgba(14, 38, 75, 0.12);
+    background: rgba(10, 28, 55, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 18px;
     padding: 32px 36px;
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(6px);
 }
 
@@ -179,7 +178,7 @@ h1, h2, h3, h4 {
     max-width: 660px;
     margin: 0 auto 24px;
     font-size: 1.05rem;
-    color: #2f4364;
+    color: #e8f2ff;
 }
 
 .hero-buttons {
