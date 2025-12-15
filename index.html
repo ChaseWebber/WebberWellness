@@ -123,7 +123,30 @@
             <a class="btn primary" href="#">Download on the App Store</a>
         </div>
         <div class="app-visual">
-            <img src="images/iphone16pro.png" alt="WebberWellness app preview on iPhone" class="app-mockup">
+            <div class="carousel" aria-label="App preview carousel">
+                <button class="carousel-control prev" aria-label="Previous app screen">‹</button>
+                <div class="carousel-track" role="group" aria-live="polite">
+                    <div class="carousel-slide active">
+                        <img src="images/iphone16pro.png" alt="Discover tab overview on iPhone" class="app-mockup">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/iphone16pro-1.png" alt="Mind track screen on iPhone" class="app-mockup">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/iphone16pro-2.png" alt="Move and activity screen on iPhone" class="app-mockup">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/iphone16pro-3.png" alt="Wellness program detail on iPhone" class="app-mockup">
+                    </div>
+                </div>
+                <button class="carousel-control next" aria-label="Next app screen">›</button>
+                <div class="carousel-dots" aria-hidden="true">
+                    <span class="carousel-dot active"></span>
+                    <span class="carousel-dot"></span>
+                    <span class="carousel-dot"></span>
+                    <span class="carousel-dot"></span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -220,6 +243,24 @@
         const isOpen = navMenu.classList.toggle('open');
         navToggle.setAttribute('aria-expanded', isOpen);
     });
+
+    const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+    const prevBtn = document.querySelector('.carousel-control.prev');
+    const nextBtn = document.querySelector('.carousel-control.next');
+    let activeIndex = 0;
+
+    const updateCarousel = (newIndex) => {
+        slides[activeIndex].classList.remove('active');
+        dots[activeIndex].classList.remove('active');
+        activeIndex = (newIndex + slides.length) % slides.length;
+        slides[activeIndex].classList.add('active');
+        dots[activeIndex].classList.add('active');
+    };
+
+    prevBtn.addEventListener('click', () => updateCarousel(activeIndex - 1));
+    nextBtn.addEventListener('click', () => updateCarousel(activeIndex + 1));
+    dots.forEach((dot, index) => dot.addEventListener('click', () => updateCarousel(index)));
 </script>
 
 </body>
