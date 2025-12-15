@@ -48,6 +48,12 @@ h1, h2, h3, h4 {
     color: #00A8E8;
 }
 
+.btn.alternate {
+    background: transparent;
+    border: 2px solid #76c277;
+    color: #76c277;
+}
+
 .btn.outline {
     border: 2px solid #0e264b;
     color: #0e264b;
