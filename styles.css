@@ -422,14 +422,14 @@ h1, h2, h3, h4 {
 }
 
 .consult-partnership .consult-image {
-    flex: 0 0 320px;
+    flex: 0 0 50%;
     display: flex;
     justify-content: flex-end;
 }
 
 .consult-partnership .consult-image img {
     width: 100%;
-    max-width: 320px;
+    max-width: 100%;
     height: auto;
     border-radius: 16px;
     box-shadow: 0 12px 24px rgba(14, 38, 75, 0.2);
