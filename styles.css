@@ -261,10 +261,17 @@ h1, h2, h3, h4 {
 .app-inner {
     display: flex;
     gap: 50px;
+    align-items: center;
+}
+
+.app-text {
+    flex: 0 0 60%;
+    max-width: 60%;
 }
 
 .app-visual {
-    flex: 1;
+    flex: 0 0 40%;
+    max-width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -578,6 +585,12 @@ h1, h2, h3, h4 {
     .consulting-grid,
     .content-grid {
         flex-direction: column;
+    }
+
+    .app-text,
+    .app-visual {
+        flex-basis: 100%;
+        max-width: 100%;
     }
 
     .about-grid {
