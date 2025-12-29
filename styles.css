@@ -357,6 +357,30 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
+.retreat-highlights {
+    list-style: none;
+    margin: 24px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.retreat-highlights li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.retreat-highlights li::before {
+    content: "•";
+    color: #0e264b;
+    font-size: 1.1em;
+    line-height: 1;
+}
+
 /* CONSULTING */
 .consulting-grid {
     display: flex;
