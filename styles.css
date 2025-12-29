@@ -384,14 +384,15 @@ h1, h2, h3, h4 {
 /* CONSULTING */
 .consulting-grid {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 40px;
     padding: 80px 0;
 }
 
 .consult-card {
     flex: 1;
     background: #f5f8fa;
-    padding: 25px;
+    padding: 36px;
     border-radius: 8px;
     text-align: left;
     border: 1px solid rgba(14, 38, 75, 0.08);
@@ -421,14 +422,14 @@ h1, h2, h3, h4 {
 }
 
 .consult-partnership .consult-image {
-    flex: 0 0 220px;
+    flex: 0 0 50%;
     display: flex;
     justify-content: flex-end;
 }
 
 .consult-partnership .consult-image img {
     width: 100%;
-    max-width: 220px;
+    max-width: 100%;
     height: auto;
     border-radius: 16px;
     box-shadow: 0 12px 24px rgba(14, 38, 75, 0.2);
