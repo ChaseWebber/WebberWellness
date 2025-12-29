@@ -60,6 +60,17 @@ h1, h2, h3, h4 {
     background: transparent;
 }
 
+.app-store-badge {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.app-store-badge img {
+    display: block;
+    height: 48px;
+    width: auto;
+}
+
 /* NAV */
 .nav {
     background: white;
