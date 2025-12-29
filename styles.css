@@ -67,7 +67,7 @@ h1, h2, h3, h4 {
 
 .app-store-badge img {
     display: block;
-    height: 52px;
+    height: 56px;
     width: auto;
 }
 
@@ -272,7 +272,7 @@ h1, h2, h3, h4 {
 
 .app-mockup {
     width: 100%;
-    max-width: 340px;
+    max-width: 320px;
     height: auto;
     border-radius: 24px;
     box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
