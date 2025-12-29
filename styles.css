@@ -428,7 +428,7 @@ h1, h2, h3, h4 {
 }
 
 .consult-partnership .consult-image img {
-    width: 100%;
+    width: 500px;
     max-width: 500px;
     height: auto;
     border-radius: 16px;
