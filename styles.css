@@ -436,6 +436,21 @@ h1, h2, h3, h4 {
     object-fit: cover;
 }
 
+.consult-card:not(.consult-partnership) .consult-image {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.consult-card:not(.consult-partnership) .consult-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 260px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(14, 38, 75, 0.2);
+    object-fit: cover;
+}
+
 /* ABOUT */
 .about {
     padding: 100px 0;
@@ -584,6 +599,11 @@ h1, h2, h3, h4 {
 
     .consult-partnership .consult-image img {
         max-width: 100%;
+    }
+
+    .consult-card:not(.consult-partnership) .consult-image img {
+        max-width: 100%;
+        height: auto;
     }
 
 }
