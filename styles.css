@@ -1,9 +1,9 @@
 /*
- * Stylesheet for Get‑Real Wellness AI Health landing page
+ * Stylesheet for WebberWellness & Ask ANA: Wellness AI landing page
  *
  * This file defines the typography, colour palette and layout rules
  * to create a modern, engaging website that encourages users to
- * download the Get‑Real Wellness app. Colours and fonts are drawn
+ * download the Ask ANA: Wellness AI app. Colours and fonts are drawn
  * from the brand guide provided by the client. Responsive design
  * ensures the site looks good on mobile, tablet and desktop screens.
  */
@@ -152,7 +152,7 @@ h1, h2, h3, h4 {
     position: relative;
     min-height: 70vh;
     padding: 120px 0 100px;
-    background-image: url('images/hero_banner2.png');
+    background-image: url('images/hero_banner1.png');
     background-size: cover;
     background-position: center 25%;
     background-repeat: no-repeat;
