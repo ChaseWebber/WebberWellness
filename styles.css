@@ -38,20 +38,20 @@ h1, h2, h3, h4 {
 }
 
 .btn.primary {
-    background: #00A8E8;
+    background: #2f8fea;
     color: white;
 }
 
 .btn.secondary {
     background: transparent;
-    border: 2px solid #00A8E8;
-    color: #00A8E8;
+    border: 2px solid #2f8fea;
+    color: #2f8fea;
 }
 
 .btn.alternate {
     background: transparent;
-    border: 2px solid #76c277;
-    color: #76c277;
+    border: 2px solid #75c87e;
+    color: #75c87e;
 }
 
 .btn.outline {
@@ -140,7 +140,7 @@ h1, h2, h3, h4 {
 }
 
 .nav-cta {
-    background: #00A8E8;
+    background: #2f8fea;
     padding: 8px 14px;
     border-radius: 4px;
     color: white;
@@ -241,11 +241,11 @@ h1, h2, h3, h4 {
 }
 
 .course-card.large {
-    border-left-color: #00A8E8;
+    border-left-color: #2f8fea;
 }
 
 .course-card.medium {
-    border-left-color: #76c277;
+    border-left-color: #75c87e;
 }
 
 .microcourses ul {
@@ -355,7 +355,7 @@ h1, h2, h3, h4 {
 }
 
 .carousel-dot.active {
-    background: #00A8E8;
+    background: #2f8fea;
     transform: scale(1.1);
 }
 
