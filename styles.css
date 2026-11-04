@@ -254,11 +254,6 @@ h1, h2, h3, h4 {
     border-left-color: #75c87e;
 }
 
-.microcourses ul {
-    list-style: none;
-    padding-left: 0;
-}
-
 /* APP */
 .app {
     padding: 100px 0;
