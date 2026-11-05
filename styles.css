@@ -215,3 +215,25 @@ a{color:var(--navy)}
 .breath-band--navy .textlink{color:#fff}
 .breath-band--navy .breath-ring{background:rgba(67,177,184,.16);border-color:rgba(67,177,184,.45)}
 .breath-band--navy .breath-core{box-shadow:0 4px 14px rgba(0,0,0,.25)}
+
+/* Mobile header fix: keep logo, Get the App and menu on one line */
+@media (max-width:760px){
+  .bar{gap:10px}
+  .bar > .btn-sm{margin-left:auto;white-space:nowrap}
+  .menu{margin-left:0;flex:0 0 44px}
+  .brand{min-width:0}
+}
+@media (max-width:420px){
+  .brand{font-size:.95rem;gap:8px}
+  .brand img{width:34px;height:34px}
+  .bar > .btn-sm{padding:.55em .9em;font-size:.82rem}
+}
+@media (max-width:380px){
+  .bar{gap:6px}
+  .brand{font-size:.85rem;gap:6px}
+  .brand img{width:30px;height:30px}
+  .bar > .btn-sm{padding:.5em .75em;font-size:.78rem}
+}
+@media (max-width:330px){
+  .brand span{display:none}
+}
