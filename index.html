@@ -1,290 +1,479 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/favicon-chrome-512x512.png" />
-    <title>WebberWellness</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live life well — Ask ANA | WebberWellness</title>
+<meta name="description" content="Live life well. A wiser approach to wellbeing. Ask ANA is your Advanced Naturopathic Assistant, curated from Dr Chase Webber's 35 years of naturopathic experience. Free to download on iPhone, with a 7-day free trial on Premium.">
+<link rel="canonical" href="https://www.webberwellness.com/">
+<meta name="theme-color" content="#10243E">
+<meta name="apple-itunes-app" content="app-id=6740890338">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WebberWellness">
+<meta property="og:title" content="Live life well — Ask ANA | WebberWellness">
+<meta property="og:description" content="A wiser approach to wellbeing. Ask ANA, your Advanced Naturopathic Assistant, curated from 35 years of naturopathic experience. Free to download on iPhone.">
+<meta property="og:url" content="https://www.webberwellness.com/">
+<meta property="og:image" content="https://www.webberwellness.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dr Chase Webber and Ask ANA, your Advanced Naturopathic Assistant">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Live life well — Ask ANA | WebberWellness">
+<meta name="twitter:description" content="A wiser approach to wellbeing. Ask ANA, curated from 35 years of naturopathic experience. Free to download on iPhone.">
+<meta name="twitter:image" content="https://www.webberwellness.com/img/og-image.jpg">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="img/favicon-64.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/open-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "@id": "https://www.webberwellness.com/#app",
+      "name": "Ask ANA: Wellness AI",
+      "alternateName": "Ask ANA",
+      "description": "Ask ANA is an educational wellness assistant: your Advanced Naturopathic Assistant, curated from Dr Chase Webber's 35 years of naturopathic experience and built on The Wellness Formula (Mind, Food, Breath, Move, Sleep). Not medical advice.",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS 26.0 or later",
+      "url": "https://www.webberwellness.com/",
+      "downloadUrl": "https://apps.apple.com/us/app/ask-ana-wellness-ai/id6740890338",
+      "installUrl": "https://apple.co/4xN2mFh",
+      "image": "https://www.webberwellness.com/img/ana-icon.webp",
+      "author": { "@id": "https://www.webberwellness.com/#chase" },
+      "publisher": { "@id": "https://www.webberwellness.com/#org" },
+      "offers": [
+        { "@type": "Offer", "name": "Monthly Premium after 7-day free trial", "price": "6.99", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Yearly Premium after 7-day free trial", "price": "49.99", "priceCurrency": "USD" }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.webberwellness.com/#chase",
+      "name": "Dr Chase Webber",
+      "jobTitle": "Naturopathic Doctor",
+      "description": "Naturopathic doctor with 35 years of experience, creator of Ask ANA and The Wellness Formula.",
+      "image": "https://www.webberwellness.com/img/dr-chase.webp",
+      "url": "https://www.webberwellness.com/",
+      "worksFor": { "@id": "https://www.webberwellness.com/#org" },
+      "sameAs": [
+        "https://www.youtube.com/@WebberWellness-DrChaseWebber",
+        "https://wellnessformula.substack.com/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.webberwellness.com/#org",
+      "name": "WebberWellness",
+      "url": "https://www.webberwellness.com/",
+      "logo": "https://www.webberwellness.com/img/ww-mark.webp",
+      "founder": { "@id": "https://www.webberwellness.com/#chase" },
+      "sameAs": [
+        "https://www.youtube.com/@WebberWellness-DrChaseWebber",
+        "https://wellnessformula.substack.com/"
+      ]
+    }
+  ]
+}
+</script>
 </head>
-
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<!-- NAVIGATION -->
-<header class="nav">
-    <div class="container nav-inner">
-        <div class="logo">
-            <img src="images/favicon-chrome-512x512.png" alt="WebberWellness logo">
-            <span>WebberWellness</span>
-        </div>
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div class="nav-menu">
-            <nav class="nav-links">
-                <a href="#courses">Coaching</a>
-                <a href="#app">App</a>
-                <a href="#retreats">Retreats</a>
-                <a href="#consulting">Collaboration</a>
-                <a href="#about">About</a>
-                <a href="#blog">Blog</a>
-            </nav>
-            <a class="nav-cta" href="#app">Wellness App</a>
-        </div>
-    </div>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="WebberWellness home">
+      <img src="img/ww-mark.webp" alt="" width="40" height="40">
+      <span>WebberWellness</span>
+    </a>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#breath">Begin with a breath</a>
+      <a href="#day">A day with ANA</a>
+      <a href="#pillars">The Formula</a>
+      <a href="#about">Team</a>
+      <a href="#work">Work with us</a>
+      <a href="#journal">Journal</a>
+    </nav>
+    <a class="btn btn-teal btn-sm" href="https://apple.co/4xN2mFh">Get the App</a>
+    <button class="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
 </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="container hero-inner">
-        <h1>Build Real Wellbeing Through Science, Natural Medicine & Smart Technology</h1>
-        <p>Dr Chase Webber brings you practical tools, accessible training, and personalised guidance to help you - or your clients - create sustainable wellbeing for life.</p>
-        <div class="hero-buttons">
-            <a href="#courses" class="btn primary">Explore Wellness Coaching</a>
-            <a href="#app" class="btn secondary">Wellness App</a>
-        </div>
+<main id="main">
+
+<!-- VERSION A HERO (light) -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1>Live life well.<br>A wiser approach<br>to <span class="u">wellbeing</span>.</h1>
+      <p class="lead">35 years of naturopathic experience, translated into practical guidance for your everyday life. Dr Chase Webber brings you Ask ANA — your Advanced Naturopathic Assistant.</p>
+      <div class="cta-row">
+        <a class="badge" href="https://apple.co/4xN2mFh">
+          <img src="img/app-store-badge.png" alt="Download on the App Store" width="180" height="60" fetchpriority="high">
+        </a>
+        <a class="textlink" href="#about">Work with Chase</a>
+      </div>
+      <p class="offer">Free to download · 7-day free trial on Premium</p>
     </div>
+    <figure class="hero-photo">
+      <img src="img/chase-hero.webp" alt="Dr Chase Webber smiling outdoors by the sea" width="900" height="900">
+      <figcaption class="photo-tag">
+        <strong>Dr Chase Webber</strong>
+        <span>Naturopathic Doctor</span>
+        <span>Author</span>
+      </figcaption>
+    </figure>
+  </div>
 </section>
 
-<!-- APP SECTION -->
-<section id="app" class="app">
-    <div class="container app-inner">
-        <div class="app-text">
-            <h2>Ask ANA your Advanced Naturopathic Assistant - Powered by AI</h2>
-            <p>Created by Dr Chase Webber, a Wellness app that brings you real solutions.</p>
-            <ul>
-                <li>This wellness app combines my expert-curated advice with AI-Driven research to provide you with specific, actionable solutions.</li>
-                <li>Our approach is backed by the evidence in nutrition, fitness, exercise, yoga, and mindfulness. We scan the latest studies and extract the gems of information for you.</li>
-                <li>Ask our AI Assistant "Ana" your own questions and receive the specific information you are looking for to take charge of your unique health journey.</li>
-                <li>Create & Track your own Wellness Goals or choose from my top 5 Wellness habits to get your health on the right track.</li>
-                <li>Data & Chats are stored securely on your device to ensure privacy is yours only.</li>
-                <li>Start with a 7 day Free Trial!</li>
-            </ul>
-            <a class="app-store-badge" href="https://apps.apple.com/us/app/ask-ana-wellness-ai/id6740890338" aria-label="Download on the App Store">
-                <img src="images/appstore_black.png" alt="Download on the App Store"></a>
-        </div>
-        <div class="app-visual">
-            <div class="carousel" aria-label="App preview carousel">
-                <button class="carousel-control prev" aria-label="Previous app screen">‹</button>
-                <div class="carousel-track" role="group" aria-live="polite">
-                    <div class="carousel-slide active">
-                        <img src="images/phone1.png" alt="Welcome to start on iPhone" class="app-mockup">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="images/phone2.png" alt="Discover screen on iPhone" class="app-mockup">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="images/phone3.png" alt="Chat screen on iPhone" class="app-mockup">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="images/phone4.png" alt="Wellness Guide screen on iPhone" class="app-mockup">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="images/phone5.png" alt="Goals Tracker on iPhone" class="app-mockup">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="images/phone6.png" alt="Goals Tracker on iPhone" class="app-mockup">
-                    </div>
-                </div>
-                <button class="carousel-control next" aria-label="Next app screen">›</button>
-                <div class="carousel-dots" aria-hidden="true">
-                    <span class="carousel-dot active"></span>
-                    <span class="carousel-dot"></span>
-                    <span class="carousel-dot"></span>
-                    <span class="carousel-dot"></span>
-                    <span class="carousel-dot"></span>
-                    <span class="carousel-dot"></span>
-                </div>
-            </div>
-        </div>
+<!-- BREATH BAND (moved from hybrid hero) -->
+<section class="breath-band breath-band--navy" id="breath">
+  <div class="wrap breath-band-grid">
+    <div class="breath-band-copy">
+      <p class="eyebrow">Begin with a breath</p>
+      <h2>Start right now with one slow breath</h2>
+      <p>A calm moment before the scroll. Then see how Ask ANA walks an ordinary day with you across Breath, Move and Mind.</p>
+      <a class="textlink" href="#day">See a day with ANA</a>
     </div>
-</section>
-
-<!-- PHILOSOPHY SECTION -->
-<section class="philosophy">
-    <div class="container">
-        <h2>A Balanced, Evidence-Based Approach to Wellbeing</h2>
-        <p class="section-intro">The Wellness Formula blends science, natural medicine, and modern technology into a practical system anyone can follow.</p>
-
-        <div class="philosophy-grid">
-            <div class="philo-item">
-                <h3>Science-Backed</h3>
-                <p>Latest research simplified into practical daily habits.</p>
-            </div>
-            <div class="philo-item">
-                <h3>Nature-Inspired</h3>
-                <p>Rooted in Naturopathic Medicine principles that support the body’s healing abilities.</p>
-            </div>
-            <div class="philo-item">
-                <h3>Tech-Enhanced</h3>
-                <p>AI tools and health data help personalise your wellbeing journey.</p>
-            </div>
+    <div class="breath-wrap">
+      <div class="breath" id="breath-anim">
+        <div class="breath-ring" aria-hidden="true"></div>
+        <div class="breath-core" aria-hidden="true">
+          <span class="breath-cue" data-cue>Breathe in</span>
         </div>
+      </div>
+      <p class="visually-hidden" id="breath-live" aria-live="polite">Breathing guide playing. Cue: breathe in, then breathe out.</p>
+      <button type="button" class="breath-pause" id="breath-pause" aria-controls="breath-anim" aria-pressed="false">
+        Pause breathing guide
+      </button>
     </div>
+  </div>
 </section>
 
-<!-- COURSES SECTION -->
-<section id="courses" class="courses">
-    <div class="container">
-        <h2>Learn to Guide, Teach & Transform Wellbeing</h2>
-        <p class="section-intro">Accessible, practical, evidence-based training for professionals and wellness enthusiasts.</p>
-
-        <div class="course-card large">
-            <h3>Wellness Coaching</h3>
-            <p>Online Coaching program for aspiring coaches and wellness professionals. Implement my Wellness Formula method to take your clients into another level of wellbeing.</p>
-            <a class="btn primary" href="mailto:drchase@webberwellness.com">Work with Me</a>
-        </div>
-
-        <div class="course-card medium">
-            <h3>Wellness Spa Management Coaching</h3>
-            <p>Practical guidance for spa owners, managers, and hospitality leaders. Are you a new Spa Manager seeking success and profitability, I will guide you in the most successful methods I have used globally.</p>
-            <a class="btn alternate" href="mailto:drchase@webberwellness.com">Apply here</a>
-        </div>
+<!-- THREE-STEP ANA EXAMPLE -->
+<section class="section tint" id="day">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">A day with ANA</p>
+      <h2>Five pillars. One ordinary day. She walks it with you.</h2>
+      <p>A compact look at how Ask ANA supports Breath, Move and Mind — from morning focus to an evening wind-down.</p>
     </div>
-</section>
 
-<!-- RETREATS SECTION -->
-<section id="retreats" class="retreats">
-    <div class="container">
-        <h2>Reset Your Body. Rebuild Your Energy. Realign Your Life.</h2>
-        <p>Immersive small-group retreats inspired by The Wellness Formula.</p>
+    <div class="day-steps">
+      <article class="day-step">
+        <div class="day-copy">
+          <p class="time">06:30 · Sunrise · Breath</p>
+          <h3>Begin before your phone does</h3>
+          <p>Wake with a few slow, rhythmic breaths to settle your nervous system. Then open ANA for one clear focus, chosen from your own goals.</p>
+          <p class="helps"><strong>How ANA helps:</strong> “ANA’s focus for you” on your morning dashboard.</p>
+        </div>
+        <figure class="day-phone">
+          <img src="img/phone3.webp" alt="Ask ANA morning dashboard with today’s wellness focus" width="600" height="1239" loading="lazy">
+        </figure>
+      </article>
 
-        <ul class="retreat-highlights">
-            <li>Activate your body's internal healing system</li>
-            <li>Move & Breathe to increase your resilience</li>
-            <li>Personal guidance from Dr Chase for your wellbeing</li>
-        </ul>
+      <article class="day-step reverse">
+        <div class="day-copy">
+          <p class="time">07:30 · Morning · Move</p>
+          <h3>Move more. Sit less. Stay strong</h3>
+          <p>Not perfection, not punishment. A walk you enjoy, done consistently, is what your heart, muscles and mood respond to over the years.</p>
+          <p class="helps"><strong>How ANA helps:</strong> Goals confirmed by Apple Health, and streaks to keep you on track.</p>
+        </div>
+        <figure class="day-phone">
+          <img src="img/phone5.webp" alt="Ask ANA Goals screen tracking Move, Mind and Breath" width="600" height="1239" loading="lazy">
+        </figure>
+      </article>
 
-        <a class="btn secondary" href="mailto:drchase@webberwellness.com">Apply here</a>
+      <article class="day-step">
+        <div class="day-copy">
+          <p class="time">16:30 · Afternoon · Mind</p>
+          <h3>Stressed? Notice. Breathe. Choose.</h3>
+          <p>In moments of pressure, swap the Inner Critic for an Inner Care moment. Five quiet minutes is a skill, not a quick fix, and it grows with practice.</p>
+          <p class="helps"><strong>How ANA helps:</strong> Just ask ANA for tips on mindfulness and how you are feeling, and get her supportive response.</p>
+        </div>
+        <figure class="day-phone">
+          <img src="img/phone4.webp" alt="Ask ANA chat answering a mindfulness question" width="600" height="1239" loading="lazy">
+        </figure>
+      </article>
     </div>
-</section>
 
-<!-- CONSULTING & PARTNERSHIPS -->
-<section id="consulting" class="consulting">
-    <div class="container consulting-grid">
-
-        <div class="consult-card consult-partnership">
-            <div class="consult-copy">
-                <h3>Hetki Sauna Partnership</h3>
-                <p>The authentic Finnish sauna experience for your home or retreat.</p>
-                <p>WebberWellness is proud to bring Hetki to the Indian Ocean.</p>
-                <p>Contact us to discuss your requirements.</p>
-                <a class="btn outline" href="mailto:chad@webberwellness.com">Get in Touch</a>
-            </div>
-            <div class="consult-image">
-                <a href="https://www.hetkisauna.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/hetki_sauna.jpg" alt="Hetki Sauna partnership sauna experience">
-                </a>
-            </div>
-        </div>
-
-        <div class="consult-card">
-            <div class="consult-copy">
-                <h3>Spa & Hospitality Consulting</h3>
-                <p>Selective high-impact collaborations for aligned wellness projects.</p>
-                <p>Professional Auditing of Wellness & Spa Facilities.</p>
-                <p>World Class Development of new Wellness Centers.</p>
-                <a class="btn outline" href="mailto:drchase@webberwellness.com">Get in Touch</a>
-            </div>
-            <div class="consult-image">
-                <img src="images/hospitality_consult.png" alt="Spa and hospitality consulting">
-            </div>
-        </div>
-
+    <div class="center">
+      <a class="badge" href="https://apple.co/4xN2mFh">
+        <img src="img/app-store-badge.png" alt="Download on the App Store" width="180" height="60" loading="lazy">
+      </a>
+      <p class="offer">Free to download · 7-day free trial on Premium · iPhone, iOS 26+</p>
     </div>
+  </div>
 </section>
 
-<!-- ABOUT SECTION -->
-<section id="about" class="about">
-    <div class="container">
-        <div class="about-intro">
-            <h2>WebberWellness is a Family Business</h2>
-            <p>Hi there, we would like to introduce ourselves to you. The people behind Webber Wellness is a father &amp; son team. Real people with real experience in the wellness world for the last 35 plus years.</p>
-        </div>
-        <div class="about-grid">
-            <article class="about-card">
-                <img src="images/DrChase-profile.jpeg" alt="Portrait of Dr. Chase Webber" class="about-photo">
-                <div class="about-card-body">
-                    <h2>Dr Chase Webber (Father)</h2>
-                    <p>A Naturopathic Doctor with 35 years of experience integrating natural medicine, modern science, and AI tools to help individuals and professionals build sustainable wellbeing systems.</p>
-                    <p>His entire life has been dedicated to health, wellness and healing.  After having been in private practice for many years around the globe he has retired but wanted to continue supporting individuals around the world to the benefits of a healthy life.</p>
-                </div>
-            </article>
-
-            <article class="about-card">
-                <img src="images/Chad_PFP.png" alt="Portrait of Chad Webber" class="about-photo">
-                <div class="about-card-body">
-                    <h2>Chad Webber (Son)</h2>
-                    <p>Qualified in Creative Design , VFX Compositing, Sound Engineering, and passionate about health & wellness for his own personal reasons.  At age 12 Chad developed Type 1 diabetes after a viral infection and needed to focus on the importance of nutrition and exercise for his health.</p>
-                    <p>Chad is focused on helping other young diabetics find solutions that improve their wellbeing.  He brings his wealth of personal experience with Diabetes as well as all his creativity and technical skill to the business.</p>
-                </div>
-            </article>
-        </div>
+<!-- PILLARS -->
+<section class="section" id="pillars">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">The Wellness Formula</p>
+      <h2>Five pillars for everyday wellbeing</h2>
+      <p>ANA is built on Dr Chase’s Wellness Formula. Small, steady actions across Mind, Food, Breath, Move and Sleep.</p>
     </div>
-</section>
-
-<!-- CONTENT HUB -->
-<section id="blog" class="content-hub">
-    <div class="container">
-        <h2>Learn the Science of Real Wellbeing</h2>
-
-        <div class="content-grid">
-            <a href="https://wellnessformula.substack.com/" class="content-card">The Wellness Formula</a>
-            <a href="https://substack.com/@webberwellness" class="content-card">Substack</a>
-            <a href="https://www.youtube.com/@WebberWellness-DrChaseWebber" class="content-card">Video Podcast</a>
-        </div>
+    <div class="pillars">
+      <article class="pillar" style="--c:#2F8FEA">
+        <img class="art" src="img/pillars/mind.webp" alt="" width="800" height="800" loading="lazy" decoding="async">
+        <h3>Mind</h3>
+        <p>Notice. Breathe. Choose.</p>
+      </article>
+      <article class="pillar" style="--c:#76C277">
+        <img class="art" src="img/pillars/food.webp" alt="" width="800" height="800" loading="lazy" decoding="async">
+        <h3>Food</h3>
+        <p>Protein first. Colour next. Eat real.</p>
+      </article>
+      <article class="pillar" style="--c:#43b1b8">
+        <img class="art" src="img/pillars/breath.webp" alt="" width="800" height="800" loading="lazy" decoding="async">
+        <h3>Breath</h3>
+        <p>Slow. Gentle. Rhythmic.</p>
+      </article>
+      <article class="pillar" style="--c:#FFA944">
+        <img class="art" src="img/pillars/move.svg" alt="" width="800" height="800" loading="lazy" decoding="async">
+        <h3>Move</h3>
+        <p>Move more. Sit less. Stay strong.</p>
+      </article>
+      <article class="pillar" style="--c:#10243E">
+        <img class="art" src="img/pillars/sleep.webp" alt="" width="800" height="800" loading="lazy" decoding="async">
+        <h3>Sleep</h3>
+        <p>Rest. Repair. Renew.</p>
+      </article>
     </div>
+  </div>
 </section>
 
-<!-- FOOTER CTA -->
-<section class="footer-cta">
-    <h2>Start Your Wellness Journey Today</h2>
-    <a class="btn primary" href="#courses">Online Coaching</a>
-    <a class="btn secondary" href="#app">Wellness App</a>
+<!-- TEAM -->
+<section class="section soft" id="about">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">Meet the team</p>
+      <h2>A father and son team</h2>
+      <p>Real people with more than 35 years in the wellness world.</p>
+    </div>
+    <div class="people">
+      <article class="person">
+        <img src="img/dr-chase.webp" alt="Portrait of Dr Chase Webber" width="720" height="719" loading="lazy">
+        <div>
+          <h3>Dr Chase Webber</h3>
+          <p class="role">Naturopathic Doctor</p>
+          <p>My work brings 35 years of wellness and natural medicine experience to a simple purpose: helping you turn useful knowledge into daily practice. Ask ANA extends that approach into everyday life. For more personal guidance or professional collaboration, explore working with me.</p>
+        </div>
+      </article>
+      <article class="person">
+        <img src="img/chad.webp" alt="Portrait of Chad Webber" width="720" height="654" loading="lazy">
+        <div>
+          <h3>Chad Webber</h3>
+          <p class="role">Creative and technical lead</p>
+          <p>Qualified in creative design, VFX compositing and sound engineering. Chad brings creativity and technical skill to WebberWellness. Personally, as a Type 1 diabetic, he knows the value of keeping the mind and body healthy.</p>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>
+
+<!-- WORK WITH US -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">Work with us</p>
+      <h2>Go further, with experience on your side</h2>
+      <p>Consulting, retreats and coaching, shaped by The Wellness Formula.</p>
+    </div>
+    <div class="work">
+      <article class="card c-3">
+        <img src="img/hospitality.webp" alt="Spa and hospitality facilities" width="1000" height="600" loading="lazy">
+        <div class="body">
+          <h3>Spa &amp; hospitality consulting</h3>
+          <p>Selective, high-impact collaborations for aligned wellness projects. Professional auditing of wellness and spa facilities, and world-class development of new wellness centres.</p>
+          <a class="btn btn-ghost" href="mailto:drchase@webberwellness.com?subject=Spa%20and%20hospitality%20consulting">Get in touch</a>
+        </div>
+      </article>
+      <article class="card c-3">
+        <img src="img/hetki-sauna.webp" alt="Hetki saunas in outdoor settings" width="1000" height="596" loading="lazy">
+        <div class="body">
+          <h3>Hetki sauna partnership</h3>
+          <p>The authentic Finnish sauna experience for your home or retreat. WebberWellness represents Hetki in the Indian Ocean region.</p>
+          <a class="btn btn-ghost" href="mailto:chad@webberwellness.com?subject=Hetki%20sauna%20enquiry">Get in touch</a>
+        </div>
+      </article>
+      <article class="card c-2">
+        <div class="body">
+          <h3>Retreats</h3>
+          <p>Small-group retreats inspired by The Wellness Formula. Move, breathe and reset with personal guidance from Dr Chase.</p>
+          <a class="btn btn-ghost" href="mailto:drchase@webberwellness.com?subject=Retreat%20enquiry">Enquire</a>
+        </div>
+      </article>
+      <article class="card c-2">
+        <div class="body">
+          <h3>Coaching</h3>
+          <p>An online coaching programme for aspiring coaches and wellness professionals. Implement the Wellness Formula method with your clients.</p>
+          <a class="btn btn-ghost" href="mailto:drchase@webberwellness.com?subject=Coaching%20enquiry">Apply</a>
+        </div>
+      </article>
+      <article class="card c-2" id="journal-card">
+        <div class="body">
+          <h3>Journal</h3>
+          <p>Wellbeing is personal. Explore mindfulness, movement, nutrition, breathing, hydrotherapy, sleep and rejuvenation through the work of Dr Chase Webber on Substack.</p>
+          <a class="btn btn-ghost" href="https://wellnessformula.substack.com/">Read</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNAL -->
+<section class="section soft" id="journal">
+  <div class="wrap">
+    <div class="head row-head">
+      <div>
+        <p class="kicker">The Wellness Formula on Substack</p>
+        <h2>Latest from the journal</h2>
+      </div>
+      <a class="textlink" href="https://wellnessformula.substack.com/">All posts on Substack</a>
+    </div>
+    <div class="posts">
+      <a class="post" href="https://wellnessformula.substack.com/p/mindfulness-train-your-mind-to-support">
+        <img src="img/journal/mind.webp" alt="" width="800" height="450" loading="lazy" decoding="async">
+        <span class="tag">Mind</span><span class="dot" style="--c:#2F8FEA" aria-hidden="true"></span>
+        <h3>Mindfulness: Train Your Mind to Support Your Health</h3>
+        <p>The Body goes where the Mind is</p>
+      </a>
+      <a class="post" href="https://wellnessformula.substack.com/p/food-and-nutrition-eat-real-build">
+        <img src="img/journal/food.webp" alt="" width="800" height="450" loading="lazy" decoding="async">
+        <span class="tag">Food</span><span class="dot" style="--c:#76C277" aria-hidden="true"></span>
+        <h3>Food &amp; Nutrition: Eat Real, Build Resilience</h3>
+        <p>Nutrition for optimal wellness</p>
+      </a>
+      <a class="post" href="https://wellnessformula.substack.com/p/sleep-and-rest-natures-great-rejuvenator">
+        <img src="img/journal/sleep.webp" alt="" width="800" height="450" loading="lazy" decoding="async">
+        <span class="tag">Sleep</span><span class="dot" style="--c:#10243E" aria-hidden="true"></span>
+        <h3>Sleep &amp; Rest: Nature’s Great Rejuvenator</h3>
+        <p>The art of Restoring your Nervous System</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final" id="get-ana">
+  <div class="wrap final-grid">
+    <img class="icon" src="img/ana-icon.webp" alt="Ask ANA app icon" width="120" height="120" loading="lazy">
+    <div>
+      <p class="final-kicker">Ask ANA · Advanced Naturopathic Assistant</p>
+      <h2>Bring your questions to ANA</h2>
+      <p class="final-price">Free to download, with 5 questions to ANA, 5 goals, and all the Wellness Guides, Blog and Daily Affirmations. Upgrade for $6.99/month or $49.99/year, both with a 7-day free trial.</p>
+      <a class="badge badge-light" href="https://apple.co/4xN2mFh">
+        <img src="img/app-store-badge.png" alt="Download on the App Store" width="180" height="60" loading="lazy">
+      </a>
+      <p class="offer light">iPhone, iOS 26+</p>
+    </div>
+  </div>
+</section>
+
+</main>
 
 <footer class="footer">
-    <div class="footer-links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-conditions.html">Terms &amp; Conditions</a>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="img/ww-mark.webp" alt="" width="40" height="40" loading="lazy"><strong>WebberWellness</strong>
     </div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/terms-conditions.html">Terms &amp; Conditions</a>
+      <a href="https://www.youtube.com/@WebberWellness-DrChaseWebber">YouTube</a>
+      <a href="https://wellnessformula.substack.com/">Substack</a>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p>Wellness education supports informed choices and does not replace individual medical care. Ask ANA is an educational wellness assistant and does not provide medical advice, diagnosis or treatment.</p>
     <p>© 2026 WebberWellness. All rights reserved.</p>
+  </div>
 </footer>
 
 <script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+(function () {
+  document.documentElement.classList.add('js');
 
-    navToggle.addEventListener('click', () => {
-        const isOpen = navMenu.classList.toggle('open');
-        navToggle.setAttribute('aria-expanded', isOpen);
+  var menu = document.querySelector('.menu');
+  var nav = document.getElementById('nav');
+  if (menu && nav) {
+    menu.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      menu.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        nav.classList.remove('open');
+        menu.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 
-    const slides = Array.from(document.querySelectorAll('.carousel-slide'));
-    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
-    const prevBtn = document.querySelector('.carousel-control.prev');
-    const nextBtn = document.querySelector('.carousel-control.next');
-    let activeIndex = 0;
+  /* Breathing guide: pause + cue + reduced motion */
+  var breath = document.getElementById('breath-anim');
+  var pauseBtn = document.getElementById('breath-pause');
+  var cue = document.querySelector('[data-cue]');
+  var live = document.getElementById('breath-live');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var paused = false;
+  var cueTimer = null;
+  var phase = 'in';
 
-    const updateCarousel = (newIndex) => {
-        slides[activeIndex].classList.remove('active');
-        dots[activeIndex].classList.remove('active');
-        activeIndex = (newIndex + slides.length) % slides.length;
-        slides[activeIndex].classList.add('active');
-        dots[activeIndex].classList.add('active');
-    };
+  function setCue(next) {
+    phase = next;
+    if (cue) cue.textContent = next === 'in' ? 'Breathe in' : 'Breathe out';
+    if (live && !paused && !reduce) {
+      live.textContent = 'Cue: ' + (next === 'in' ? 'breathe in' : 'breathe out');
+    }
+  }
+  function startCueCycle() {
+    stopCueCycle();
+    if (reduce || paused) return;
+    setCue('in');
+    cueTimer = setInterval(function () {
+      setCue(phase === 'in' ? 'out' : 'in');
+    }, 4000);
+  }
+  function stopCueCycle() {
+    if (cueTimer) { clearInterval(cueTimer); cueTimer = null; }
+  }
+  function applyPaused(state) {
+    paused = state;
+    if (breath) breath.classList.toggle('is-paused', state);
+    if (pauseBtn) {
+      pauseBtn.setAttribute('aria-pressed', state ? 'true' : 'false');
+      pauseBtn.textContent = state ? 'Play breathing guide' : 'Pause breathing guide';
+    }
+    if (state) {
+      stopCueCycle();
+      if (live) live.textContent = 'Breathing guide paused.';
+    } else {
+      startCueCycle();
+    }
+  }
 
-    prevBtn.addEventListener('click', () => updateCarousel(activeIndex - 1));
-    nextBtn.addEventListener('click', () => updateCarousel(activeIndex + 1));
-    dots.forEach((dot, index) => dot.addEventListener('click', () => updateCarousel(index)));
+  if (reduce) {
+    if (breath) breath.classList.add('is-static');
+    if (cue) cue.textContent = 'Breathe';
+    if (pauseBtn) {
+      pauseBtn.disabled = true;
+      pauseBtn.textContent = 'Breathing guide static (reduced motion)';
+    }
+    if (live) live.textContent = 'Static breathing guide. Reduced motion is on.';
+  } else {
+    startCueCycle();
+    if (pauseBtn) {
+      pauseBtn.addEventListener('click', function () { applyPaused(!paused); });
+    }
+  }
+})();
 </script>
-
 </body>
 </html>
