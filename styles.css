@@ -6,6 +6,7 @@
   --navy:#10243E;
   --blue:#2F8FEA;
   --teal:#43b1b8;
+  --teal-deep:#1F6B70;
   --green:#76C277;
   --orange:#FFA944;
   --cream:#F7F5EF;
@@ -126,7 +127,7 @@ a{color:var(--navy)}
 .day-step.reverse{grid-template-columns:.9fr 1.1fr}
 .day-step.reverse .day-copy{order:2}
 .day-step.reverse .day-phone{order:1}
-.time{font-family:var(--head);font-weight:700;font-size:.9rem;color:var(--teal);margin:0 0 .6em;letter-spacing:.02em}
+.time{font-family:var(--head);font-weight:700;font-size:.9rem;color:var(--teal-deep);margin:0 0 .6em;letter-spacing:.02em}
 .day-copy h3{font-size:clamp(1.35rem,2.2vw,1.75rem)}
 .helps{font-size:.98rem;background:rgba(16,36,62,.04);border-left:3px solid var(--teal);padding:.75em 1em;border-radius:0 10px 10px 0;margin:1.1em 0 0}
 .day-phone{margin:0;display:flex;justify-content:center}
