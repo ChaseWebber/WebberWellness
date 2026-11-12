@@ -111,17 +111,21 @@ The stacks are `--head: "Montserrat", system-ui, sans-serif` and `--body: "Open 
 ├── fonts/
 │   ├── montserrat.woff2           Heading font
 │   └── open-sans.woff2            Body font
-├── img/                           Current images. See below.
+├── img/                           Web-ready images for the live site. See below.
 │   ├── journal/                   mind.webp, food.webp, sleep.webp (800×450)
 │   └── pillars/                   mind, food, breath, sleep as WebP; move.svg
-├── images/                        Legacy originals. Not linked. Safe to delete.
-│   └── icons/                     Unused appstore, instagram, substack, x, youtube SVGs
+├── images/                        Originals kept for possible later use.
+│   └── icons/                     appstore, instagram, substack, x and youtube SVGs
 └── .github/workflows/static.yml   GitHub Pages deploy
 ```
 
-`images/` holds the old PNG and JPEG originals (portraits, phone screenshots, the Hetki and hospitality photos, a banner, and `favicon-chrome-512x512.png`) plus those icons. A search of the HTML, CSS, `robots.txt`, `sitemap.xml` and the Pages workflow found no reference to `images/`. It is safe to delete. Until it is deleted, deploys still upload it, because the workflow publishes the whole repository.
+Chase’s rule: `images/` is a resource folder for original images we might use later. Correctly sized, web-ready versions go in `img/` for the live site (WebP, sized as in [Adding or replacing images](#adding-or-replacing-images)). Pages only ever reference `img/`.
 
-Four files in `img/` are on disk and unused by any page: `hetki-collage.webp`, `spa-collage.webp`, `phone1.webp` and `phone6.webp`. New pages should use `img/`, not `images/`.
+`images/` currently holds `appstore_black.png`, `banner.png`, `favicon-chrome-512x512.png`, `hetki_sauna.jpg`, `hospitality_consult.png`, `phone1.png` through `phone6.png`, and `icons/` (`appstore.svg`, `instagram.svg`, `substack.svg`, `x.svg`, `youtube.svg`).
+
+The deploy workflow publishes the whole repository, so files in `images/` are publicly reachable.
+
+Two files in `img/` are not referenced by any page: `phone1.webp` and `phone6.webp`.
 
 ## Pages and URLs
 
