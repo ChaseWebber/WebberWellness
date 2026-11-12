@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Live life well - Ask ANA | WebberWellness</title>
-<meta name="description" content="Live life well. A wiser approach to wellbeing. Ask ANA is your Advanced Naturopathic Assistant, curated from Dr Chase Webber's 35 years of naturopathic experience. Free to download on iPhone, with a 7-day free trial on Premium.">
+<meta name="description" content="Meet ANA, your Advanced Naturopathic Assistant, curated from Dr Chase Webber's 35 years of experience. Free to download on iPhone, with a 7-day Premium trial.">
 <link rel="canonical" href="https://www.webberwellness.com/">
 <meta name="theme-color" content="#10243E">
 <meta name="apple-itunes-app" content="app-id=6740890338">
@@ -112,14 +112,14 @@
       <p class="lead">35 years of naturopathic experience, translated into practical guidance for your everyday life. Dr Chase Webber brings you Ask ANA - your Advanced Naturopathic Assistant.</p>
       <div class="cta-row">
         <a class="badge" href="https://apple.co/4xN2mFh">
-          <img src="img/app-store-badge.png" alt="Download on the App Store" width="180" height="60" fetchpriority="high">
+          <img src="img/app-store-badge.png" alt="Download on the App Store" width="180" height="60">
         </a>
         <a class="textlink" href="#work">Work with Dr Chase</a>
       </div>
       <p class="offer">Free to download · 7-day free trial on Premium</p>
     </div>
     <figure class="hero-photo">
-      <img src="img/chase-hero.webp" alt="Dr Chase Webber smiling outdoors by the sea" width="900" height="900">
+      <img src="img/chase-hero.webp" alt="Dr Chase Webber smiling outdoors by the sea" width="900" height="900" fetchpriority="high">
       <figcaption class="photo-tag">
         <strong>Dr Chase Webber</strong>
         <span>Naturopathic Doctor</span>
@@ -145,7 +145,7 @@
           <span class="breath-cue" data-cue>Breathe in</span>
         </div>
       </div>
-      <p class="visually-hidden" id="breath-live" aria-live="polite">Breathing guide playing. Cue: breathe in, then breathe out.</p>
+      <p class="visually-hidden" id="breath-live" aria-live="polite">Breathing guide playing</p>
       <button type="button" class="breath-pause" id="breath-pause" aria-controls="breath-anim" aria-pressed="false">
         Pause breathing guide
       </button>
@@ -427,9 +427,6 @@
   function setCue(next) {
     phase = next;
     if (cue) cue.textContent = next === 'in' ? 'Breathe in' : 'Breathe out';
-    if (live && !paused && !reduce) {
-      live.textContent = 'Cue: ' + (next === 'in' ? 'breathe in' : 'breathe out');
-    }
   }
   function startCueCycle() {
     stopCueCycle();
@@ -451,8 +448,9 @@
     }
     if (state) {
       stopCueCycle();
-      if (live) live.textContent = 'Breathing guide paused.';
+      if (live) live.textContent = 'Breathing guide paused';
     } else {
+      if (live) live.textContent = 'Breathing guide playing';
       startCueCycle();
     }
   }
