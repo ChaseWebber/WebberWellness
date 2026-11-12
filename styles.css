@@ -237,3 +237,80 @@ a{color:var(--navy)}
 @media (max-width:330px){
   .brand span{display:none}
 }
+
+/* Policy pages
+   privacy-policy.html and terms-conditions.html only.
+   Headings and text use brand navy (#10243E, var(--navy)).
+   Headings are Montserrat (var(--head)); body copy is Open Sans (var(--body)).
+   The home page hides .nav at narrow widths behind a scripted menu button.
+   These pages have no menu script, so App and About stay in the bar.
+*/
+.policy-content{
+  width:min(760px,100% - 40px);
+  margin:56px auto 80px;
+  color:var(--navy);
+  font-family:var(--body);
+  line-height:1.75;
+}
+.policy-content h1,
+.policy-content h2,
+.policy-content h3{
+  font-family:var(--head);
+  color:var(--navy);
+  line-height:1.25;
+}
+.policy-content h1{
+  font-size:clamp(1.85rem,3vw,2.35rem);
+  margin:0 0 .4em;
+}
+.policy-content h2{
+  font-size:clamp(1.25rem,2vw,1.5rem);
+  margin:1.7em 0 .5em;
+}
+.policy-content h3{
+  font-size:1.08rem;
+  margin:1.35em 0 .4em;
+}
+.policy-content p,
+.policy-content li{
+  color:var(--navy);
+}
+.policy-updated{
+  font-family:var(--head);
+  font-weight:600;
+  font-size:.95rem;
+  color:var(--navy);
+  margin:0 0 1.6em;
+}
+.policy-content ul{
+  margin:0 0 1.15em;
+  padding-left:1.25em;
+}
+.policy-content li{
+  margin:0 0 .55em;
+}
+.policy-content li:last-child{margin-bottom:0}
+.policy-content a{
+  color:var(--navy);
+  text-decoration:underline;
+  text-decoration-color:var(--navy);
+  text-underline-offset:.15em;
+}
+.policy-content a:hover{text-decoration-thickness:2px}
+@media (max-width:760px){
+  .policy-page .nav{
+    display:flex;
+    position:static;
+    flex-direction:row;
+    align-items:center;
+    margin-left:auto;
+    padding:0;
+    background:transparent;
+    border-bottom:0;
+    gap:16px;
+  }
+  .policy-page .nav a{padding:6px 0}
+}
+@media (max-width:330px){
+  .policy-page .brand span{display:inline}
+}
