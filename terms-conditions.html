@@ -6,32 +6,27 @@
     <link rel="icon" href="images/favicon-chrome-512x512.png" />
     <title>WebberWellness Terms &amp; Conditions</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/open-sans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="policy-page">
 
-<!-- NAVIGATION -->
-<header class="nav">
-    <div class="container nav-inner">
-        <a class="logo" href="index.html">
-            <img src="images/favicon-chrome-512x512.png" alt="WebberWellness logo">
-            <span>WebberWellness</span>
-        </a>
-        <div class="nav-menu">
-            <nav class="nav-links">
-                <a href="index.html#app">App</a>
-                <a href="index.html#about">About</a>
-            </nav>
-        </div>
-    </div>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <img src="img/ww-mark.webp" alt="" width="40" height="40">
+      <span>WebberWellness</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html#app">App</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
 </header>
 
 <main class="policy-page">
-    <div class="container policy-content">
+    <div class="policy-content">
         <h1>Wellness App Terms &amp; Conditions</h1>
         <p class="policy-updated">Last updated: September 22, 2026</p>
         <p>These terms and conditions apply to the Wellness app (hereby referred to as “Application”) for mobile devices that was created by Dr CHASE WEBBER (hereby referred to as “Service Provider”) as a Subscription service.</p>
@@ -90,11 +85,15 @@ Email: (drchase@webberwellness.com)</p>
 </main>
 
 <footer class="footer">
-    <div class="footer-links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-conditions.html">Terms &amp; Conditions</a>
-    </div>
+  <div class="wrap foot-grid">
+    <nav class="foot-links" aria-label="Footer">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-conditions.html">Terms &amp; Conditions</a>
+    </nav>
+  </div>
+  <div class="wrap legal">
     <p>© 2026 WebberWellness. All rights reserved.</p>
+  </div>
 </footer>
 
 </body>
