@@ -314,3 +314,65 @@ a{color:var(--navy)}
 @media (max-width:330px){
   .policy-page .brand span{display:inline}
 }
+
+/* 404 page
+   404.html is served for unknown URLs, including nested paths.
+   Layout only, plus one secondary button colour: brand blue fill
+   (#2F8FEA, var(--blue)) with navy text. The home button uses the
+   existing .btn.btn-navy (navy fill, white text). Body copy stays navy.
+*/
+body.page-404{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+.not-found{
+  flex:1 0 auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  width:min(52rem,calc(100% - 40px));
+  margin:0 auto;
+  padding:72px 0 88px;
+  color:var(--navy);
+}
+.not-found h1{
+  font-size:clamp(2rem,4vw,2.7rem);
+  margin:0 0 .4em;
+}
+.not-found > p{
+  margin:0;
+  max-width:46rem;
+  color:var(--navy);
+}
+.not-found-actions{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:1.15rem;
+  width:100%;
+  margin-top:1.6rem;
+}
+.not-found .ana-line{
+  margin:.65rem 0 0;
+  max-width:46rem;
+  color:var(--navy);
+}
+.not-found .btn{
+  max-width:100%;
+}
+.not-found .btn-store{
+  background:var(--blue);
+  color:var(--navy);
+}
+.not-found .btn-store:hover{
+  background:#2580d4;
+  color:var(--navy);
+  transform:translateY(-1px);
+}
+@media (max-width:420px){
+  .not-found{padding:48px 0 64px}
+  .not-found .btn{font-size:.9rem;padding:.75em 1.15em}
+}
